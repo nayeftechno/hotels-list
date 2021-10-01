@@ -5,7 +5,9 @@ import HotelsContextProvider from "../src/contexts/HotelsContexts";
 function MyApp({ Component, pageProps }) {
   return (
     <HotelsContextProvider>
-      <Component {...pageProps} />
+      <div className="container app-container">
+        <Component {...pageProps} />
+      </div>
     </HotelsContextProvider>
   );
 }

@@ -52,16 +52,20 @@ function SearchResultList({ hotels }) {
                 {list.length}
               </button>
             </div>
-            <div className="col-md-4">
-              <button className="btn btn-primary" onClick={sortByName}>
-                Sort by name
-              </button>
-            </div>
-            <div className="col-md-4">
-              <button className="btn btn-success" onClick={sortByPrice}>
-                Sort by price
-              </button>
-            </div>
+            {list.length ? (
+              <>
+                <div className="col-md-4">
+                  <button className="btn btn-primary" onClick={sortByName}>
+                    Sort by name
+                  </button>
+                </div>
+                <div className="col-md-4">
+                  <button className="btn btn-success" onClick={sortByPrice}>
+                    Sort by price
+                  </button>
+                </div>
+              </>
+            ) : null}
           </div>
           <div className="grid-container">
             {list.length ? (

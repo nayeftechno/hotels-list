@@ -3,7 +3,7 @@ function Home() {
   return (
     <>
       <GetMeta title="Home" />
-      <div className="row">
+      <main className="row">
         <div className="col-md-12">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -20,7 +20,7 @@ function Home() {
             nec eros.
           </p>
         </div>
-      </div>
+      </main>
     </>
   );
 }

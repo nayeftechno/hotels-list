@@ -18,7 +18,7 @@ function Hotels() {
   } = useContext(HotelsContext);
   return (
     <>
-      <GetMeta title="List" />
+      <GetMeta title="Hotels List" />
       {renderSearchContent()}
       {renderSearchResult()}
     </>

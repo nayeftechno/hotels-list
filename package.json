@@ -25,5 +25,9 @@
     "eslint-config-next": "11.1.2",
     "jest": "^27.2.4",
     "jest-css-modules": "^2.1.0"
+  },
+  "jest": {
+    "verbose": true
   }
-}
+  }
+

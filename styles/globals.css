@@ -14,3 +14,36 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.app-container,
+.row-container {
+  padding-top: 5%;
+}
+.center-content {
+  text-align: center;
+}
+.img-gif {
+  width: 50px;
+}
+.loading-gif-margin {
+  margin-top: 10%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 5px;
+  font-size: 13px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.row-padding {
+  padding: 5px;
+}
+.range-slider {
+  width: 260px;
+}

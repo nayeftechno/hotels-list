@@ -1,6 +1,6 @@
 This is a [code-challenge](https://github.com/tajawal/code-challenge/blob/master/FE.md) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started......
+## Setup Project
 
 First, run the development server:
 

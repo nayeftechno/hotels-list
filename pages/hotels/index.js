@@ -6,8 +6,15 @@ import EndDatePicker from "../../src/components/EndDatePicker";
 import LoadingGif from "../../src/components/LoadingGif";
 import SearchResultList from "../../src/components/SearchResultList";
 function Hotels() {
-  const { loading, isSearchTriggered, hotels, error, searchHotelsBasedDates } =
-    useContext(HotelsContext);
+  const {
+    loading,
+    isSearchTriggered,
+    hotels,
+    error,
+    searchHotelsBasedDates,
+    startDate,
+    editStartDate,
+  } = useContext(HotelsContext);
   return (
     <>
       <GetMeta title="List" />
@@ -20,7 +27,10 @@ function Hotels() {
       <div className="row">
         <div className="col-md-3">
           <div className="form-group">
-            <StartDatePicker />
+            <StartDatePicker
+              startDate={startDate}
+              editStartDate={editStartDate}
+            />
           </div>
         </div>
         <div className="col-md-3">

@@ -1,8 +1,6 @@
-import { useContext } from "react";
+import React from "react";
 import DatePicker from "react-datepicker";
-import { HotelsContext } from "../contexts/HotelsContexts";
-function StartDatePicker() {
-  const { startDate, editStartDate } = useContext(HotelsContext);
+function StartDatePicker({ startDate, editStartDate }) {
   return (
     <DatePicker
       className="form-control text-center"
@@ -14,4 +12,7 @@ function StartDatePicker() {
     />
   );
 }
-export default StartDatePicker;
+function startDatePropsAreEqual(prevProps, nextProps) {
+  return prevProps.startDate === nextProps.startDate;
+}
+export default React.memo(StartDatePicker, startDatePropsAreEqual);

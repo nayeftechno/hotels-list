@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import DatePicker from "react-datepicker";
 import { HotelsContext } from "../contexts/HotelsContexts";
 function EndDatePicker() {

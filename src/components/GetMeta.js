@@ -3,6 +3,7 @@ function GetMeta({ title }) {
   return (
     <Head>
       <title>Hotels | {title}</title>
+      <meta name="keywords" content="hotels" />
     </Head>
   );
 }

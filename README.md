@@ -2,12 +2,12 @@ This is a [code-challenge](https://github.com/tajawal/code-challenge/blob/master
 
 ## Setup Project
 
-First, run the development server:
+First, to run prject :
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn add
+or
+npm i
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -2,7 +2,7 @@ This is a [code-challenge](https://github.com/tajawal/code-challenge/blob/master
 
 ## Setup Project
 
-First, to run prject :
+First, install dependencies :
 
 ```bash
 yarn
@@ -10,7 +10,7 @@ or
 npm i
 ```
 
-Then To Start App
+Then, to rub app :
 
 ```bash
 yarn dev

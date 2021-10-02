@@ -1,8 +1,6 @@
-import React, { useContext } from "react";
+import { memo } from "react";
 import DatePicker from "react-datepicker";
-import { HotelsContext } from "../contexts/HotelsContexts";
-function EndDatePicker() {
-  const { endDate, editEndDate } = useContext(HotelsContext);
+function EndDatePicker({ endDate, editEndDate }) {
   return (
     <DatePicker
       className="form-control text-center"
@@ -14,4 +12,7 @@ function EndDatePicker() {
     />
   );
 }
-export default EndDatePicker;
+function endDatePropsAreEqual(prevProps, nextProps) {
+  return prevProps.endDate === nextProps.endDate;
+}
+export default memo(EndDatePicker, endDatePropsAreEqual);

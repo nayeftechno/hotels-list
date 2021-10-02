@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 function SingleHotel({ hotel }) {
   const { name, price, city, available_on } = hotel;
   return (
@@ -16,7 +16,7 @@ function SingleHotel({ hotel }) {
     </div>
   );
 }
-function hotelPropsAreEqual(prevHotel, nextHotel) {
-  return prevHotel.name === nextHotel.name;
+function hotelPropsAreEqual(prevProps, nextProps) {
+  return prevProps.name === nextProps.name;
 }
-export default React.memo(SingleHotel, hotelPropsAreEqual);
+export default memo(SingleHotel, hotelPropsAreEqual);

@@ -14,6 +14,8 @@ function Hotels() {
     searchHotelsBasedDates,
     startDate,
     editStartDate,
+    endDate,
+    editEndDate,
   } = useContext(HotelsContext);
   return (
     <>
@@ -35,7 +37,7 @@ function Hotels() {
         </div>
         <div className="col-md-3">
           <div className="form-group">
-            <EndDatePicker />
+            <EndDatePicker endDate={endDate} editEndDate={editEndDate} />
           </div>
         </div>
         <div className="col-md-3">

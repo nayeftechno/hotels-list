@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import DatePicker from "react-datepicker";
 function StartDatePicker({ startDate, editStartDate }) {
   return (
@@ -15,4 +15,4 @@ function StartDatePicker({ startDate, editStartDate }) {
 function startDatePropsAreEqual(prevProps, nextProps) {
   return prevProps.startDate === nextProps.startDate;
 }
-export default React.memo(StartDatePicker, startDatePropsAreEqual);
+export default memo(StartDatePicker, startDatePropsAreEqual);

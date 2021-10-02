@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import GetMeta from "../../src/components/GetMeta";
 import { HotelsContext } from "../../src/contexts/HotelsContexts";
-import StartDatePicker from "../../src/components/StartDatePicker";
-import EndDatePicker from "../../src/components/EndDatePicker";
+import AppDatePicker from "../../src/components/AppDatePicker";
 import LoadingGif from "../../src/components/LoadingGif";
 import SearchResultList from "../../src/components/SearchResultList";
 function Hotels() {
@@ -29,15 +28,15 @@ function Hotels() {
       <div className="row">
         <div className="col-md-3">
           <div className="form-group">
-            <StartDatePicker
-              startDate={startDate}
-              editStartDate={editStartDate}
+            <AppDatePicker
+              currentDate={startDate}
+              onDateChange={editStartDate}
             />
           </div>
         </div>
         <div className="col-md-3">
           <div className="form-group">
-            <EndDatePicker endDate={endDate} editEndDate={editEndDate} />
+            <AppDatePicker currentDate={endDate} onDateChange={editEndDate} />
           </div>
         </div>
         <div className="col-md-3">

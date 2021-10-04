@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Head from "next/head";
 function GetMeta({ title }) {
   return (
@@ -7,4 +8,4 @@ function GetMeta({ title }) {
     </Head>
   );
 }
-export default GetMeta;
+export default memo(GetMeta);
